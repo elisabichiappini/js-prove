@@ -26,3 +26,17 @@ function mediaCubi(array) {
 }
 
 console.log(mediaCubi(nums));
+
+//Somma dei numeri maggiori di un valore dato > 5
+function sommaMaggioriDi(array, limite) {
+    let somma = 0;
+
+    for(let numero of array) {
+        if(numero > limite) {
+            somma += numero;
+        }
+   }
+    return somma;
+}
+
+console.log(sommaMaggioriDi(nums, 5))
